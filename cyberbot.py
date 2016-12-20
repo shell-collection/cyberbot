@@ -511,5 +511,10 @@ def commands():
 
 
 if __name__ == '__main__':
-    launcher = Launcher(commands())
-    launcher.run()
+    try:
+        launcher = Launcher(commands())
+        launcher.run()
+    except Exception as e:
+        print(e)
+    else:
+        pass
